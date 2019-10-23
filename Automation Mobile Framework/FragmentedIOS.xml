@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Android-Test-Suite" parallel="tests" data-provider-thread-count="1">
+
+    <test name="iOS-min" thread-count="1">
+        <parameter name="platformName" value="iOS"></parameter>
+        <parameter name="deviceName" value="Iphone 11.4" />
+        <parameter name="version" value="11.4" />
+        <classes>
+            <class name="automation.FragmentedDevice1" />
+        </classes>
+    </test>
+
+    <test name="iOS-max" thread-count="1">
+        <parameter name="platformName" value="iOS"></parameter>
+        <parameter name="deviceName" value="Iphone 12.2" />
+        <parameter name="version" value="12.2" />
+        <classes>
+            <class name="automation.FragmentedDevice2" />
+        </classes>
+    </test>
+
+</suite>

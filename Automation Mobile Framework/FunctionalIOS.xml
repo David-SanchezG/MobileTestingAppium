@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="iOS-Test-Suite" parallel="true" data-provider-thread-count="2">
+    <test name="Functional">
+        <parameter name="platformName" value="iOS"></parameter>
+        <classes>
+            <class name="automation.Functional"/>
+        </classes>
+    </test>
+
+</suite>

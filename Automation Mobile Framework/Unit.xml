@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Unit-Test-Suite">
+
+    <test name="Android-min">
+        <parameter name="platformName" value="Android"></parameter>
+        <parameter name="version" value="7.0"/>
+        <classes>
+            <class name="automation.Unit"/>
+        </classes>
+    </test>
+
+<!--    <test name="Android-max">-->
+<!--        <parameter name="platformName" value="Android"></parameter>-->
+<!--        <parameter name="version" value="9.0"/>-->
+<!--        <classes>-->
+<!--            <class name="automation.Unit"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="iOS-min">-->
+<!--        <parameter name="platformName" value="iOS"></parameter>-->
+<!--        <parameter name="version" value="11.4"/>-->
+<!--        <classes>-->
+<!--            <class name="automation.Unit"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="iOS-max">-->
+<!--        <parameter name="platformName" value="iOS"></parameter>-->
+<!--        <parameter name="version" value="12.2"/>-->
+<!--        <classes>-->
+<!--            <class name="automation.Unit"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+</suite>
