@@ -1,24 +1,22 @@
 package automation;
 
-import cucumber.api.testng.AbstractTestNGCucumberTests;
 import automation.helpers.LocalDriver;
+import cucumber.api.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
+
 
 @Test
 @CucumberOptions(
         plugin = {
                 "pretty",
-                "json:target/cucumber-report/cucumber2.json",
+                "json:target/cucumber-report/cucumber.json",
         },
         features = {
-                "src/test/resources/automation/Features"
+                "src/test/resources/automation/features"
         }
 )
-public class FragmentedDevice2 extends AbstractTestNGCucumberTests {
+public class Unit extends AbstractTestNGCucumberTests {
 
     @BeforeMethod
     @Parameters({"version", "platformName"})
@@ -28,7 +26,7 @@ public class FragmentedDevice2 extends AbstractTestNGCucumberTests {
     }
 
     @Override
-    @DataProvider(parallel = true)
+    @DataProvider(parallel = false)
     public Object[][] scenarios() {
         return super.scenarios();
     }

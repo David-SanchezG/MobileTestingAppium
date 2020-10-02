@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="Android-Test-Suite" parallel="true" data-provider-thread-count="2">
-    <test name="Functional">
+<suite name="Unit-Test-Suite">
+
+    <test name="Android">
         <parameter name="platformName" value="Android"></parameter>
+        <parameter name="version" value="7.0"/>
         <classes>
-            <class name="automation.Functional"/>
+            <class name="automation.Unit"/>
         </classes>
     </test>
 
