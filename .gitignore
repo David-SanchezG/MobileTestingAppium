@@ -1,7 +1,5 @@
 target
 .idea
-*.apk
-*.app
 .settings
 .classpath
 .project
